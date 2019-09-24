@@ -13,7 +13,7 @@
 				<p> Insira o número de seu candidato: </p>
 				<p> Branco = 1  - Nulo = 0 </p>
 				<input type="number" name="votoGov"><br>
-				<button type="submit"> Enviar </button>
+				<button type="checkbox">Branco</button><button>Confirmar</button><button type="submit"> Enviar </button>
 			</fieldset>
 		</form>
 

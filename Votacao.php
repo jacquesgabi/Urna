@@ -1,6 +1,8 @@
 <?php
+	$sql
+	
 	$votoGov = $_POST['votoGov'];
-	$gov13 = "Gilberto Menezes";
+	$gov45 = "João Doria";
 	$nulo = 0;
 	$branco = 0;
 
