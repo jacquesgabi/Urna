@@ -1,0 +1,14 @@
+<?php
+	
+	/**
+	 * 
+	 */
+	class Presidente {
+
+		function {
+			
+		}
+	}
+	
+
+?>
