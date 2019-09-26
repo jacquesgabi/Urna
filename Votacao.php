@@ -1,10 +1,12 @@
 <?php
-	$sql;
+
+	include "Conexao.php";
+	
 	$votoPre = $_POST['votoPre'];
 	//$votoGov = $_POST['votoGov'];
 	$vnulo = 0;
 	$vbranco = 0;
-
+	$sql = "SELECT nome, partido FROM Presidente";
 	switch ($votoPre) {
 		case 0:
 			echo "Voto em branco.";
