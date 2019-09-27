@@ -11,9 +11,9 @@
 			<fieldset>
 				<legend> Presidente </legend>
 				<p> Insira o número de seu candidato: </p>
-				<p> Branco = 0 </p>
+				<p> Branco = 1000 </p>
 				<input type="number" name="votoPre"><br>
-				<button type="checkbox">Branco</button><button type="">Confirmar</button><button type="submit"> Enviar </button>
+				<button type="checkbox">Branco</button><button type="">Confirmar</button>
 			</fieldset>
 		</form>
 
