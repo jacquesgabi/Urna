@@ -6,11 +6,11 @@
 <body>
 	<form action="controleVotos.php" method="post">
 			<fieldset>
-				<legend> Presidente </legend>
+				<legend> Gorvernador </legend>
 				<p> Insira o número de seu candidato: </p>
 				<p> Branco = 1000 </p>
 				<p> Nulo Numero inexistente </p>
-				<input type="number" name="numPresidente"><br>
+				<input type="number" name="numGovernador"><br>
 				<button type="submit">Confirmar</button>
 			</fieldset>
 		</form>
