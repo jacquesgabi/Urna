@@ -1,6 +1,6 @@
 <?php
 
-echo '<meta charset="utf-8">';
+	echo '<meta charset="utf-8">';
 	$bdServidor = '127.0.0.1';
 	$bdUsuario = 'root';
 	$bdSenha = '';

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Urna Do Demo</title>
-</head>
-<body>
-	<form action="controleVotosG.php" method="POST">
+	<head>
+		<title>Urna Do Demo</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+		<form action="controleVotosG.php" method="POST">
 			<fieldset>
 				<legend> Gorvernador </legend>
 				<p> Insira o número de seu candidato: </p>
@@ -15,7 +17,5 @@
 			</fieldset>
 		</form>
 
-
-
-</body>
+	</body>
 </html>

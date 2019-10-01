@@ -1,12 +1,5 @@
 <?php
 
-	/**class Conexao{
-		public static function getConexao(){ //Static ->
-			$conexao = new PDO ('mysql:host=localhost;dbname=urna','root','');
-			return $conexao;
-		}
-	}*/
-
 	echo '<meta charset="utf-8">';
 	$bdServidor = '127.0.0.1';
 	$bdUsuario = 'root';

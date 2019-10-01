@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html meta-charset="utf-8">
-<head >
-	<title>Dados</title>
-</head>
-<body>
+<html>
+  <head>
+	  <title>Resultados</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
 	
-<table>
-<colgroup span="4"></colgroup>
-<tr>
-<th>Numero</th>
-<th>Presidente</th>
-<th >Partido</th>
-<th>Votos</th>
+    <table>
+      <colgroup span="4"></colgroup>
+      <tr>
+        <th>Número</th>
+        <th>Presidente</th>
+        <th >Partido</th>
+        <th>Votos</th>
 </tr>
 <tr>
 	<?php  include 'conexao.php'; 
@@ -46,9 +47,9 @@
 <table>
 <colgroup span="4"></colgroup>
 <tr>
-<th>Numero</th>
+<th>Número</th>
 <th>Governador</th>
-<th >Partido</th>
+<th>Partido</th>
 <th>Votos</th>
 </tr>
 <tr>
@@ -81,6 +82,6 @@
 </tr>
 <?php } ?>
 </table>
-<a href="index.php">Inicio</a>
+<a href="index.php">Início</a>
 </body>
 </html>

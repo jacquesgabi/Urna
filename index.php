@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Urna Do Demo</title>
-</head>
-<body>
-	<form action="controleVotos.php" method="POST">
+	<head>
+		<title>Urna Do Demo</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="controleVotos.php" method="POST">
 			<fieldset>
 				<legend> Presidente </legend>
 				<p> Insira o número de seu candidato: </p>
@@ -16,7 +17,5 @@
 			</fieldset>
 		</form>
 
-
-
-</body>
+	</body>
 </html>
