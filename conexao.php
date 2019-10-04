@@ -1,6 +1,6 @@
 <?php
 
-	echo '<meta charset="utf-8">';
+/*echo '<meta charset="utf-8">';
 	$bdServidor = '127.0.0.1';
 	$bdUsuario = 'root';
 	$bdSenha = '';
@@ -13,4 +13,13 @@
 		//string that describes the error.
 		//string vaiza, não ocorreu o erro.
 	}
- ?>
+*/
+	class Conexao{
+		public static function getConexao(){ //Static ->
+
+			$conexao = new PDO ('mysql:host=localhost;dbname=urna','root','');
+			return $conexao;
+		}
+
+	}
+?>

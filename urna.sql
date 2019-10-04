@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 24-Set-2019 às 14:16
--- Versão do servidor: 5.7.21
--- PHP Version: 5.6.35
+-- Generation Time: 04-Out-2019 às 20:38
+-- Versão do servidor: 5.7.26
+-- versão do PHP: 7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -27,23 +27,6 @@ USE `urna`;
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `eleitor`
---
-
-DROP TABLE IF EXISTS `eleitor`;
-CREATE TABLE IF NOT EXISTS `eleitor` (
-  `numTitulo` int(11) NOT NULL,
-  `nome` varchar(100) DEFAULT NULL,
-  `Presidente_numPresidente` int(11) NOT NULL,
-  `Governador_numGovernador` int(11) NOT NULL,
-  PRIMARY KEY (`numTitulo`),
-  KEY `fk_Eleitor_Presidente_idx` (`Presidente_numPresidente`),
-  KEY `fk_Eleitor_Governador1_idx` (`Governador_numGovernador`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `governador`
 --
 
@@ -61,9 +44,9 @@ CREATE TABLE IF NOT EXISTS `governador` (
 --
 
 INSERT INTO `governador` (`numGovernador`, `nome`, `partido`, `votos`) VALUES
-(14, 'Ronie Nutella', 'PNTL', NULL),
-(45, 'João Doria', 'PCC', NULL),
-(74, 'Joséfina Fiança', 'PBB', NULL);
+(14, 'Ronie Nutella', 'PNTL', '0'),
+(45, 'João Doria', 'PCC', '0'),
+(74, 'Joséfina Fiança', 'PBB', '0');
 
 -- --------------------------------------------------------
 
@@ -85,9 +68,9 @@ CREATE TABLE IF NOT EXISTS `presidente` (
 --
 
 INSERT INTO `presidente` (`numPresidente`, `nome`, `partido`, `votos`) VALUES
-(24, 'ACEU DISPOR', '24HRS', NULL),
-(25, 'João Rasgado', 'PUPA', NULL),
-(81, 'Pranchana Jack', 'PS', NULL);
+(24, 'ACEU DISPOR', '24HRS', 0),
+(25, 'João Rasgado', 'PUPA', 0),
+(81, 'Pranchana Jack', 'PS', 0);
 
 -- --------------------------------------------------------
 
@@ -104,15 +87,12 @@ CREATE TABLE IF NOT EXISTS `votos` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Constraints for dumped tables
+-- Extraindo dados da tabela `votos`
 --
 
---
--- Limitadores para a tabela `eleitor`
---
-ALTER TABLE `eleitor`
-  ADD CONSTRAINT `fk_Eleitor_Governador1` FOREIGN KEY (`Governador_numGovernador`) REFERENCES `governador` (`numGovernador`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_Eleitor_Presidente` FOREIGN KEY (`Presidente_numPresidente`) REFERENCES `presidente` (`numPresidente`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+INSERT INTO `votos` (`idVotos`, `branco`, `nulo`) VALUES
+(1, 1, 0),
+(2, 1, 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
