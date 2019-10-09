@@ -15,7 +15,7 @@
          <?php 
 
          include 'Governador.php';
-         include 'votosB.php';
+         include 'Nbgovernador.php';
          include 'Conexao.php';
          $conexao = Conexao::getConexao();
          $numGovernador=$_POST['numGovernador'];

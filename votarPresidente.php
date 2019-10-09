@@ -3,7 +3,6 @@ include 'Conexao.php';
 $numPresidente=24;
      
   	 class Presidente{
-
        public function votarPresidente($numPresidente){
         $sql1="SELECT * FROM presidente WHERE numPresidente=$numPresidente";
         $resultado1 = mysqli_query($conexao,$sql1);

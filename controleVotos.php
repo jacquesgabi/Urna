@@ -14,7 +14,7 @@
          <br>
          <?php
          include_once 'Presidente.php';
-         include_once 'votosB.php';
+         include_once 'Nbpresidente.php';
          include_once 'conexao.php';
          $conexao = Conexao::getConexao();
          $numPresidente=$_POST['numPresidente'];
@@ -25,6 +25,7 @@
          $branco= new NBPresidente('1','0','0');
          $nulo= new NBPresidente('1','0','0');
 
+         
          if($numPresidente==1000){
             $branco->setBranco(1);
             header( "refresh:2;index2.php" );

@@ -12,8 +12,21 @@
 			<hr>
 			<h3>Governador</h3>
 			<p> Insira o número de seu candidato: </p>
-			<p> Branco = 1000 </p>
-			<p> Nulo = Número inexistente </p>
+			<fieldset>
+				<?php  
+          			include_once 'conexao.php'; 
+          			$conexao = Conexao::getConexao();
+          			$sql1="SELECT * FROM Governador ORDER BY numGovernador";
+          			$statement = $conexao -> query($sql1);
+          			$conjResult = $statement -> fetchAll(); 
+          			foreach ($conjResult as $linha){
+          				echo $nome=$linha['nome'] . " = ";
+              			echo $numPresidente=$linha['numGovernador'] . "<br>";
+        			} 
+        			echo "Branco = 1000<br>";
+        			echo "Nulo = Número inexistente";
+        		?>
+			</fieldset>
 			<br>
 			<input type="number" name="numGovernador"><br><br>
 			<button type="submit">Confirmar</button>
